@@ -7,13 +7,19 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ba6e1', endColorstr='#1f2c55',GradientType=1 ); /* IE6-9 */
 }
 
-.primary p, .primary em {
+.primary p {
     color: #fff;
     text-align: center;
 }
 
+.primary p, .secondary p{
+    margin: 0;
+}
+
 .secondary {
     background: #f3ef20;
+    color:  #33394e;
+    padding: 1em 0;
 }
 
 .tertiary {
@@ -30,7 +36,7 @@
 }
 
 h1.headline {
-    font-size: 5em;
+    font-size: 6.5em;
     font-weight: bold;
     text-align: center;
     color: #f3ef20;
@@ -41,4 +47,73 @@ h1.headline {
 }
 .image-container img {
     max-width: 100%;
+}
+
+p.figures,p.subline,p.pointline {
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.live-register {
+    background: #f3ef20;
+}
+
+.live-register p {
+    color: #33394e;
+}
+
+.live-register em {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+p.figures {
+    font-size: 5.3em;
+}
+
+p.subline {
+    font-size: 1.7em;
+}
+
+p.pointline {
+    font-size: 2.8em;
+}
+
+p.small {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.small-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.small-copy span {
+    margin-right: 0.5em;
+}
+
+.secondary a {
+    color:  #33394e;
+    margin-right: 0.3em;
+}
+
+.large-title {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1;
+    text-align: right;
+}
+
+.manifesto {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.manifesto.signature {
+    border-bottom: 1px dotted #fff;
 }
