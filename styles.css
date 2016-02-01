@@ -114,6 +114,13 @@ p.small {
     margin: 1em 0;
 }
 
+.manifesto-container .button {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    height: 135px;
+}
+
 .manifesto.signature span {
     border-bottom: 2px dotted #fff;
     padding-right: 1.5em;
@@ -138,16 +145,16 @@ p.small {
     height: 100%;
 }
 
-.composite .badge {
+.goals .button {
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 100px;
-    width: 100px;
+    top: 12px;
+    right: 20px;
+    height: 135px;
 }
 
 .goals {
     margin: 1em 0;
+    position: relative;
 }
 
 .goals p {
