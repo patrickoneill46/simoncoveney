@@ -9,7 +9,6 @@
 
 .primary p {
     color: #fff;
-    text-align: center;
 }
 
 .primary p, .secondary p{
@@ -49,10 +48,11 @@ h1.headline {
     max-width: 100%;
 }
 
-p.figures,p.subline,p.pointline {
+p.figures, p.subline, p.pointline {
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .live-register {
@@ -114,6 +114,68 @@ p.small {
     margin: 1em 0;
 }
 
-.manifesto.signature {
-    border-bottom: 1px dotted #fff;
+.manifesto.signature span {
+    border-bottom: 2px dotted #fff;
+    padding-right: 1.5em;
+}
+
+.signature img {
+    margin-bottom: 1.5em;
+}
+
+.signature-printed {
+    margin-top: -3.2em;
+    font-size: 1.2em;
+}
+
+.composite {
+    position: relative;
+}
+
+.composite img.portrait {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.composite .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+}
+
+.goals {
+    margin: 1em 0;
+}
+
+.goals p {
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.goals p:nth-child(1) {
+    margin-left: 0.6em;
+}
+
+.goals p:nth-child(3) {
+    margin-left: 1.1em;
+}
+
+.recovery {
+    margin-bottom: 1em;
+}
+
+.recovery p {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1;
+    color: #f3ef20;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
 }
