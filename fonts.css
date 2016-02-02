@@ -1,8 +1,16 @@
+h1,h2 {
+    font-weight: bold;
+    color: #f3ef20;
+}
+
 h1.headline {
     font-size: 2em;
-    font-weight: bold;
     text-align: center;
-    color: #f3ef20;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 .jobs p {
@@ -82,8 +90,8 @@ p.small {
     font-size: 1.2em;
 }
 
-.goals p {
-    font-size: 2em;
+.goals span {
+    font-size: 1.7em;
     font-weight: bold;
     line-height: 1;
 }
@@ -95,6 +103,26 @@ p.small {
     color: #f3ef20;
     text-align: center;
 }
+
+.list-container ul {
+    color: #fff;
+    list-style: none;
+    padding:0;
+    margin:0;
+    overflow-x: visible;
+}
+
+.list-container li {
+    font-size: 1.3em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.list-container li:before {
+    content: "• ";
+    color: #f3ef20;
+    padding-right: 1em;
+}
+
 
 @media only screen and (min-width : 480px) {
     h1.headline {
@@ -122,6 +150,10 @@ p.small {
     }
 
     .recovery p {
+        font-size: 2em;
+    }
+
+    .goals span {
         font-size: 2em;
     }
 }
@@ -153,6 +185,10 @@ p.small {
 
     p.manifesto {
         font-size: 1.5em;
+    }
+
+    .manifesto-container .button {
+
     }
 
     .recovery p {
@@ -194,17 +230,19 @@ p.small {
         font-size: 1em;
     }
 
-    .goals p {
+    .goals span {
         font-size: 5em;
     }
 
-    .goals p:nth-child(1) {
+    .goals span:nth-child(1) {
         margin-left: 0.6em;
     }
 
-    .goals p:nth-child(3) {
+    .goals span:nth-child(3) {
         margin-left: 1.1em;
     }
+
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -244,7 +282,7 @@ p.small {
     .signature-printed {
         font-size: 1.2em;
     }
-    
+
     .recovery p {
         font-size: 3em;
     }

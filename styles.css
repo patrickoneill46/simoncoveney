@@ -29,6 +29,12 @@
     color: #fff;
 }
 
+//end of main section
+
+.jobs-container {
+    margin-bottom: 2em;
+}
+
 .impact {
     text-transform: uppercase;
     font-weight: bold;
@@ -39,6 +45,8 @@
 }
 .image-container img {
     max-width: 100%;
+    margin: auto;
+    display: block;
 }
 
 p.figures, p.subline, p.pointline {
@@ -80,9 +88,9 @@ img.trend {
 
 .manifesto-container .button {
     position: absolute;
-    bottom: 12px;
+    bottom: 163px;
     right: 20px;
-    height: 135px;
+    height: 80px;
 }
 
 .manifesto.signature span {
@@ -101,7 +109,12 @@ img.trend {
 img.portrait {
     position: absolute;
     bottom: 0;
-    height: 45%;
+    height: 75%;
+}
+
+.goals {
+    margin: 1em;
+    text-align: center;
 }
 
 .goals .button {
@@ -111,7 +124,8 @@ img.portrait {
     height: 135px;
 }
 
-.goals p {
+.goals span {
+    color: #fff;
     display: inline;
     text-align: center;
 }
@@ -128,24 +142,33 @@ img.portrait {
     margin-left: 1em;
 }
 
+.list-container {
+    padding: 1em 0;
+}
+
+
 @media only screen and (min-width : 480px) {
     .jobs {
         margin-top: 3em;
     }
 
     img.portrait {
-        height: 85%;
+        left: 35px;
     }
 }
 
 @media screen and (min-width: 768px) {
 
     img.portrait {
-        height: 75%;
+        height: 100%;
     }
 }
 
 @media screen and (min-width: 992px) {
+
+    .jobs-container {
+        margin-bottom: 0;
+    }
 
     .jobs {
         margin: 0 -3.5em -3.2em 0;
@@ -156,17 +179,26 @@ img.portrait {
     }
 
     .goals {
-        margin: 1em 0;
         position: relative;
+        text-align: left;
     }
 
-
+    .manifesto-container .button {
+        bottom: 12px;
+        right: 20px;
+        height: 135px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
 
+    .portrait-container {
+        position: relative;
+    }
+
+
     img.portrait {
-        left: 0
-        height: 100%;
+        left: 100px;
+        height: 380px;
     }
 }
