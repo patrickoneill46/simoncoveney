@@ -34,13 +34,6 @@
     font-weight: bold;
 }
 
-h1.headline {
-    font-size: 6.5em;
-    font-weight: bold;
-    text-align: center;
-    color: #f3ef20;
-}
-
 .image-container {
     max-width: 100%;
 }
@@ -63,35 +56,6 @@ p.figures, p.subline, p.pointline {
     color: #33394e;
 }
 
-.live-register em {
-    font-size: 3em;
-    font-weight: bold;
-}
-
-p.figures {
-    font-size: 5.3em;
-}
-
-p.subline {
-    font-size: 1.7em;
-}
-
-p.pointline {
-    font-size: 2.8em;
-}
-
-p.small {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.small-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1;
-}
-
 .small-copy span {
     margin-right: 0.5em;
 }
@@ -101,17 +65,17 @@ p.small {
     margin-right: 0.3em;
 }
 
-.large-title {
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: bold;
-    line-height: 1;
-    text-align: right;
+.jobs {
+    margin-top: 1.7em;
 }
 
-.manifesto {
-    font-size: 1.2em;
-    margin: 1em 0;
+.employment {
+    float: left;
+}
+
+img.trend {
+    display: block;
+    margin: auto;
 }
 
 .manifesto-container .button {
@@ -130,19 +94,14 @@ p.small {
     margin-bottom: 1.5em;
 }
 
-.signature-printed {
-    margin-top: -3.2em;
-    font-size: 1.2em;
-}
-
 .composite {
     position: relative;
 }
 
-.composite img.portrait {
+img.portrait {
     position: absolute;
-    top: 0;
-    height: 100%;
+    bottom: 0;
+    height: 45%;
 }
 
 .goals .button {
@@ -152,37 +111,62 @@ p.small {
     height: 135px;
 }
 
-.goals {
-    margin: 1em 0;
-    position: relative;
-}
-
 .goals p {
-    font-size: 5em;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.goals p:nth-child(1) {
-    margin-left: 0.6em;
-}
-
-.goals p:nth-child(3) {
-    margin-left: 1.1em;
+    display: inline;
+    text-align: center;
 }
 
 .recovery {
     margin-bottom: 1em;
 }
 
-.recovery p {
-    font-size: 3em;
-    font-weight: bold;
-    line-height: 1;
-    color: #f3ef20;
-    text-align: center;
-}
-
 .logo {
     max-width: 100%;
+}
+
+.unemployment {
+    margin-left: 1em;
+}
+
+@media only screen and (min-width : 480px) {
+    .jobs {
+        margin-top: 3em;
+    }
+
+    img.portrait {
+        height: 85%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    img.portrait {
+        height: 75%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .jobs {
+        margin: 0 -3.5em -3.2em 0;
+    }
+
+    img.portrait {
+        height: 100%;
+    }
+
+    .goals {
+        margin: 1em 0;
+        position: relative;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    img.portrait {
+        left: 0
+        height: 100%;
+    }
 }

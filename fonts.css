@@ -1,0 +1,251 @@
+h1.headline {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #f3ef20;
+}
+
+.jobs p {
+    text-transform: uppercase;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: center
+}
+
+.employment p.subline {
+    text-align: left;
+    float: right;
+}
+
+.jobs p:nth-child(1){
+    font-size: 2em;
+}
+.jobs p:nth-child(2){}
+.jobs p:nth-child(3){
+    font-size: 1.5em;
+}
+
+p.subline {
+    font-size: 1.8em;
+}
+
+.live-register em {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+p.figures {
+    font-size: 2em;
+}
+
+p.percentage {
+    font-size: 4em;
+    margin-top: -0.1em;
+    line-height: 1;
+}
+
+.unemployment p.subline {
+    text-align: left;
+}
+
+p.pointline {
+    font-size: 1.5em;
+}
+
+p.small {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.manifesto {
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+.small-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.large-title {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1;
+    text-align: right;
+}
+
+.signature-printed {
+    margin-top: -3.2em;
+    font-size: 1.2em;
+}
+
+.goals p {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.recovery p {
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1;
+    color: #f3ef20;
+    text-align: center;
+}
+
+@media only screen and (min-width : 480px) {
+    h1.headline {
+        font-size: 2.5em;
+    }
+
+    p.subline {
+        font-size: 2.4em;
+    }
+
+    p.percentage {
+        font-size: 5em;
+    }
+
+    p.pointline {
+        font-size: 1.8em;
+    }
+
+    p.figures {
+        font-size: 3em;
+    }
+
+    .manifesto {
+        font-size: 1.7em;
+    }
+
+    .recovery p {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1.headline {
+        font-size: 4em;
+    }
+
+    .jobs p:nth-child(1){
+        font-size: 2em;
+    }
+    .jobs p:nth-child(2){}
+    .jobs p:nth-child(3){
+        font-size: 1.5em;
+    }
+
+    p.figures {
+        font-size: 4em;
+    }
+
+    p.subline {
+        font-size: 2.5em;
+    }
+
+    p.percentage {
+        font-size: 6.1em;
+    }
+
+    p.manifesto {
+        font-size: 1.5em;
+    }
+
+    .recovery p {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    h1.headline {
+        font-size: 5em;
+    }
+
+    .jobs p:nth-child(1){
+        font-size: 5.3em;
+    }
+
+    .jobs p:nth-child(2){
+        font-size: 1.7em;
+        margin-left: 2em;
+    }
+
+    .jobs p:nth-child(3){
+        font-size: 2.3em;
+        margin-left: 2em;
+    }
+
+    p.subline {
+        font-size: 1.4em;
+    }
+
+    p.percentage {
+        font-size: 3.8em;
+        margin-top: -0.1em;
+        margin-left: -0.3em;
+    }
+
+    p.manifesto {
+        font-size: 1em;
+    }
+
+    .goals p {
+        font-size: 5em;
+    }
+
+    .goals p:nth-child(1) {
+        margin-left: 0.6em;
+    }
+
+    .goals p:nth-child(3) {
+        margin-left: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    h1.headline {
+        font-size: 6.5em;
+    }
+
+    .live-register em {
+        font-size: 3em;
+    }
+
+    p.figures {
+        font-size: 5.3em;
+    }
+
+    p.pointline {
+        font-size: 2.8em;
+    }
+
+    p.small {
+        font-size: 1.2em;
+    }
+
+    .manifesto {
+        font-size: 1.2em;
+    }
+
+    .small-title {
+        font-size: 1.5em;
+    }
+
+    .large-title {
+        font-size: 2.5em;
+    }
+
+    .signature-printed {
+        font-size: 1.2em;
+    }
+    
+    .recovery p {
+        font-size: 3em;
+    }
+}
