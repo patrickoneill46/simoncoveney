@@ -30,53 +30,6 @@ h2 {
     text-align: center;
 }
 
-.jobs p {
-    text-transform: uppercase;
-    line-height: 1em;
-    font-weight: bold;
-    text-align: center
-}
-
-.employment p.subline {
-    text-align: left;
-    float: right;
-}
-
-.jobs p:nth-child(1){
-    font-size: 2em;
-}
-.jobs p:nth-child(2){}
-.jobs p:nth-child(3){
-    font-size: 1.5em;
-}
-
-p.subline {
-    font-size: 1.8em;
-}
-
-.live-register em {
-    font-size: 3em;
-    font-weight: bold;
-}
-
-p.figures {
-    font-size: 2em;
-}
-
-p.percentage {
-    font-size: 4em;
-    margin-top: -0.1em;
-    line-height: 1;
-}
-
-.unemployment p.subline {
-    text-align: left;
-}
-
-p.pointline {
-    font-size: 1.5em;
-}
-
 p.small {
     font-size: 1.2em;
     font-weight: bold;

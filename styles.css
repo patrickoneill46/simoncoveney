@@ -29,12 +29,6 @@
     color: #fff;
 }
 
-//end of main section
-
-.jobs-container {
-    margin-bottom: 2em;
-}
-
 .impact {
     text-transform: uppercase;
     font-weight: bold;
@@ -51,21 +45,6 @@
     display: block;
 }
 
-p.figures, p.subline, p.pointline {
-    font-weight: 900;
-    line-height: 1;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.live-register {
-    background: #f3ef20;
-}
-
-.live-register p {
-    color: #33394e;
-}
-
 .small-copy span {
     margin-right: 0.5em;
 }
@@ -77,15 +56,6 @@ p.figures, p.subline, p.pointline {
 
 .jobs {
     margin-top: 1.7em;
-}
-
-.employment {
-    float: left;
-}
-
-img.trend {
-    display: block;
-    margin: auto;
 }
 
 .manifesto-container .button {
@@ -145,9 +115,8 @@ img.portrait {
 }
 
 .list-container {
-    padding: 1em 0;
+    padding: 1em 3em;
 }
-
 
 @media only screen and (min-width : 480px) {
     .jobs {
