@@ -91,9 +91,9 @@ img.portrait {
 
 .goals .button {
     position: absolute;
-    top: 12px;
+    top: 46px;
     right: 20px;
-    height: 135px;
+    height: 38px;
 }
 
 .goals span {
@@ -123,6 +123,14 @@ img.portrait {
         margin-top: 3em;
     }
 
+    .manifesto-container .button {
+        bottom: 53px;
+    }
+
+    .goals .button {
+        height: 78px;
+    }
+
     img.portrait {
         left: 35px;
     }
@@ -132,6 +140,17 @@ img.portrait {
 
     img.portrait {
         height: 100%;
+        left: 60px;
+    }
+
+    .manifesto-container .button {
+        bottom: 102px;
+        height: 95px;
+    }
+
+    .goals .button {
+        top: 25px;
+        right: 30px;
     }
 }
 
@@ -147,6 +166,13 @@ img.portrait {
 
     img.portrait {
         height: 100%;
+        left: 0;
+    }
+
+    .manifesto-container .button {
+        bottom: 109px;
+        right: 50px;
+        height: 85px;
     }
 
     .goals {
@@ -154,10 +180,10 @@ img.portrait {
         text-align: left;
     }
 
-    .manifesto-container .button {
-        bottom: 12px;
-        right: 20px;
-        height: 135px;
+    .goals .button {
+        top: 65px;
+        right: -111px;
+        height: 150px;
     }
 }
 
@@ -167,9 +193,19 @@ img.portrait {
         position: relative;
     }
 
+    .manifesto-container .button {
+        bottom: 19px;
+        height: 158px;
+    }
+
+    .goals .button {
+        top: 35px;
+        right: -41px;
+        height: 158px;
+    }
 
     img.portrait {
-        left: 100px;
-        height: 380px;
+        left: 20px;
+        height: 440px;
     }
 }
