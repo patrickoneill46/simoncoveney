@@ -27,6 +27,16 @@ module.exports = function(grunt) {
               banner: '<!-- Developed by Patrick O\'Neill -->'
             }
           },
+          fonts: {
+            src: ['fonts/gotham-bold-webfont.*'],
+            dest: 'dist/fonts',
+            flatten: true,
+            cwd: '.',
+            options: {
+              silent: true,
+              banner: '<!-- Developed by Patrick O\'Neill -->'
+            }
+          }
         },
 
         cssmin: {
