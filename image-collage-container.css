@@ -1,0 +1,107 @@
+.image-collage-container {
+    position: relative;
+}
+
+.image-collage-container .image-container {
+    margin: 0 1em;
+}
+
+.image-collage-container img {
+    border: solid 3px #fff;
+    margin: 1em;
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+}
+
+.list-container li {
+    font-size: 1em;
+ }
+
+@media screen and (min-width: 992px) {
+
+    .image-collage-container .image-container img {
+        position: absolute;
+        height: auto;
+    }
+
+    .image-collage-container .image-container #img-1 {
+        z-index:10;
+        width: 208px;
+        top: 0;
+        right: 0;
+    }
+    .image-collage-container .image-container #img-2 {
+        width: 150px;
+        top: 58px;
+        left: 0;
+        z-index: 3;
+    }
+    .image-collage-container .image-container #img-3 {
+        width: 254px;
+        top: 105px;
+        left: 111px;
+        z-index: 2;
+    }
+    .image-collage-container .image-container #img-4 {
+        width: 238px;
+        top: 178px;
+        left: 281px;
+        z-index: 3;
+    }
+    .image-collage-container .image-container #img-5 {
+        top: 213px;
+        left: 20px;
+        width: 163px;
+        z-index: 4;
+    }
+    .image-collage-container .image-container #img-6 {
+        width: 353px;
+        top: 70px;
+        left: 133px;
+    }
+    .image-collage-container .image-container #img-7 {
+        width: 221px;
+        top: 114px;
+    }
+    .image-collage-container .image-container #img-8 {
+        width: 257px;
+        top: 22px;
+    }
+    .image-collage-container .image-container #img-9 {
+        width: 163px;
+        left: 199px;
+    }
+    .image-collage-container .image-container #img-10 {
+        width: 189px;
+        top: 75px;
+        left: 336px;
+    }
+    .image-collage-container .image-container #img-11 {
+        width: 186px;
+        top: 13px;
+        left: 514px;
+        z-index: 2;
+    }
+    .image-collage-container .image-container #img-12 {
+        width: 322px;
+        top: -49px;
+        left: 644px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+}
+@media screen and (min-width: 992px) {
+
+    .image-collage-container {
+        height: 240px;
+    }
+
+    .image-collage-container .h2 {
+        white-space: nowrap;
+    }
+}
