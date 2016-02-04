@@ -4,6 +4,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-embed-fonts');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -33,7 +34,7 @@ module.exports = function(grunt) {
           }
         },
 
-        clean: ['dist'],
+        clean: ['dist/', 'tmp/'],
 
         copy: {
           img: {
@@ -44,8 +45,16 @@ module.exports = function(grunt) {
             src: ['fonts/gotham-bold-webfont.*'],
             dest: 'dist/'
           }
+        },
+
+        embedFonts: {
+          all: {
+            files: {
+              'tmp/fonts.css': ['fonts.css']
+            }
+          }
         }
     });
 
-    grunt.registerTask('default', ['clean', 'cssmin', 'includes', 'copy']);
+    grunt.registerTask('default', ['clean', 'embedFonts', 'cssmin', 'includes', 'copy']);
 }
