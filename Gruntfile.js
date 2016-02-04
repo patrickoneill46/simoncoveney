@@ -2,6 +2,8 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-includes');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -17,26 +19,6 @@ module.exports = function(grunt) {
               banner: '<!-- Developed by Patrick O\'Neill -->'
             }
           },
-          img: {
-            src: ['img/*.png'],
-            dest: 'dist/img',
-            flatten: true,
-            cwd: '.',
-            options: {
-              silent: true,
-              banner: '<!-- Developed by Patrick O\'Neill -->'
-            }
-          },
-          fonts: {
-            src: ['fonts/gotham-bold-webfont.*'],
-            dest: 'dist/fonts',
-            flatten: true,
-            cwd: '.',
-            options: {
-              silent: true,
-              banner: '<!-- Developed by Patrick O\'Neill -->'
-            }
-          }
         },
 
         cssmin: {
@@ -49,9 +31,21 @@ module.exports = function(grunt) {
               'output.css': ['bootstrap.css', 'fonts.css', 'styles.css', 'image-collage-container.css']
             }
           }
-        }
+        },
 
+        clean: ['dist'],
+
+        copy: {
+          img: {
+            src: ['img/*.png'],
+            dest: 'dist/',
+          },
+          fonts: {
+            src: ['fonts/gotham-bold-webfont.*'],
+            dest: 'dist/'
+          }
+        }
     });
 
-    grunt.registerTask('default', ['cssmin', 'includes']);
+    grunt.registerTask('default', ['clean', 'cssmin', 'includes', 'copy']);
 }
