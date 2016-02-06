@@ -42,7 +42,7 @@ module.exports = function(grunt) {
             dest: 'dist/',
           },
           fonts: {
-            src: ['fonts/gotham-bold-webfont.*'],
+            src: ['fonts/gotham-bold-webfont.*', 'fonts/GothamBook.*'],
             dest: 'dist/'
           }
         },
