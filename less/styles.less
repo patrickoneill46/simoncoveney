@@ -1,10 +1,10 @@
 .primary {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4ba6e1+0,1f2c55+100 */
-  background: #4ba6e1; /* Old browsers */
-  background: -moz-linear-gradient(left, #4ba6e1 0%, #1f2c55 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #4ba6e1 0%,#1f2c55 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #4ba6e1 0%,#1f2c55 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ba6e1', endColorstr='#1f2c55',GradientType=1 ); /* IE6-9 */
+  background: @lightBlue; /* Old browsers */
+  background: -moz-linear-gradient(left, @lightBlue 0%, @darkBlue 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, @lightBlue 0%,@darkBlue 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, @lightBlue 0%,@darkBlue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@lightBlue', endColorstr='@darkBlue',GradientType=1 ); /* IE6-9 */
 }
 
 .primary p {
@@ -16,13 +16,13 @@
 }
 
 .secondary {
-  background: #f3ef20;
-  color:  #33394e;
+  background: @yellow;
+  color:  @navy;
   padding: 1em 0;
 }
 
 .tertiary {
-  background: #33394e;
+  background: @navy;
 }
 
 .tertiary p {
@@ -50,7 +50,7 @@
 }
 
 .secondary a {
-  color:  #33394e;
+  color: @navy;
   margin-right: 0.3em;
 }
 
