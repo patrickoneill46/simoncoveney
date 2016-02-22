@@ -1,10 +1,12 @@
 module.exports = function(grunt) {
 
-    grunt.loadNpmTasks('grunt-includes');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-embed-fonts');
+    grunt.loadNpmTasks('grunt-includes');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -29,7 +31,7 @@ module.exports = function(grunt) {
           },
           target: {
             files: {
-              'output.css': ['bootstrap.css', 'fonts.css', 'styles.css', 'image-collage-container.css']
+              'output.css': ['tmp/styles.css']
             }
           }
         },
@@ -53,8 +55,23 @@ module.exports = function(grunt) {
               'tmp/fonts.css': ['fonts.css']
             }
           }
+        },
+
+        less: {
+            development: {
+              files: {
+                  'tmp/styles.css': 'less/main.less'
+              },
+            }
+        },
+
+        watch: {
+            less: {
+                files: ['less/*less'],
+                tasks: ['less']
+            }
         }
     });
 
-    grunt.registerTask('default', ['clean', 'embedFonts', 'cssmin', 'includes', 'copy']);
+    grunt.registerTask('default', ['clean', 'less', 'cssmin', 'includes', 'copy']);
 }
